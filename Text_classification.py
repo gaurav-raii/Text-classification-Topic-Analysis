@@ -2,7 +2,7 @@
 """
 Created on Tue Apr  2 14:40:03 2019
 
-@author: gaura
+@author: gaurav_rai
 """
 from AdvancedAnalytics import TextAnalytics
 import pandas as pd
@@ -55,9 +55,7 @@ tf_matrix='tfidf'
 
 # Create the Review by Term Frequency Matrix using Custom Analyzer 
 # max_df is a limit for terms. If a term has more than this 
-# proportion of documents then that term is dropped. Use max_df=1.0 
-# to eliminate this behavior. Typical values are max_df between 0.5 and 0.95
-
+# proportion of documents then that term is dropped. 
 
 ta = TextAnalytics() 
 cv = CountVectorizer(max_df=max_df, min_df=2, max_features=m_features,analyzer=ta.my_analyzer) 
