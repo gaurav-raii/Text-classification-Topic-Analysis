@@ -133,5 +133,3 @@ df = df.join(df_rev)
 
 table= df.groupby('topic',as_index=False)[['price','points']].mean()
 table.rename(columns={'topic':'cluster','price':'Avg_price','points':'Avg_points'}, inplace=True)
-
- 
